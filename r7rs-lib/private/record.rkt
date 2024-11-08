@@ -82,7 +82,7 @@
                (values struct:record make-record record-pred?
                        (make-struct-field-accessor record-ref field-index 'field-accessors)
                        ...
-                       (make-struct-field-mutator record-set! field-modifier-index 'field-modifiers ...)
+                       (make-struct-field-mutator record-set! field-modifier-index 'field-modifiers)
                        ...)))
            ; wrap the struct constructor with a custom proc that handles missing fields
            (define (constructor.name constructor.field ...)
